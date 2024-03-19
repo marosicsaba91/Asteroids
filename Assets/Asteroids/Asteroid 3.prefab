@@ -955,6 +955,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9210794210022785397, guid: e2738f941bfc71a4194a9078a95828a3,
         type: 3}
+    - target: {fileID: 8956848689779718906, guid: 1dfb1765ef6c7024682de658969771cd,
+        type: 3}
+      propertyPath: deathEffectPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 6407611231344694925, guid: e2738f941bfc71a4194a9078a95828a3,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

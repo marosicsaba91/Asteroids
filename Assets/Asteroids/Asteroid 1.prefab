@@ -153,8 +153,6 @@ MonoBehaviour:
   subAsteroids:
   - {fileID: 7145280520276619754, guid: 59152f277a35c68498a0e5b017d8b173, type: 3}
   - {fileID: 7145280520276619754, guid: ab5bffe91b79ecc478c07e062bec7f5b, type: 3}
-  spawnEffect: {fileID: 8317489444778768942, guid: 42ea0a4dcaa2a65489c20753d3e4f60e,
-    type: 3}
   spawnEffectPrefab: {fileID: 8320238553207949081, guid: 42ea0a4dcaa2a65489c20753d3e4f60e,
     type: 3}
 --- !u!50 &996723821
@@ -474,13 +472,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c7451833e48b24da12c1b879534ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactEffects:
-  - {fileID: 7392203185818879888, guid: 8dd65c8397ead894e8713dcdb9409c76, type: 3}
-  deathEffects:
-  - {fileID: 9210794210022785397, guid: e2738f941bfc71a4194a9078a95828a3, type: 3}
   minimumDamage: 5
   minimumPush: 0
   disableOnDeath: 1
+  impactEffectPrefabs:
+  - {fileID: 100000, guid: 8dd65c8397ead894e8713dcdb9409c76, type: 3}
+  deathEffectPrefabs:
+  - {fileID: 6407611231344694925, guid: e2738f941bfc71a4194a9078a95828a3, type: 3}
 --- !u!114 &2007861979347459209
 MonoBehaviour:
   m_ObjectHideFlags: 0

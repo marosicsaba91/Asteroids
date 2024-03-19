@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2870961247264631973}
   - component: {fileID: 6434998597282772591}
   - component: {fileID: 9153238888057184018}
-  - component: {fileID: 3327688376972817467}
   m_Layer: 6
   m_Name: Engine Beam
   m_TagString: Untagged
@@ -33,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 8115360516973549073}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!198 &6434998597282772591
 ParticleSystem:
@@ -4900,34 +4899,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &3327688376972817467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3463262120578950593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fba3d6c49914b194da2818fadb099351, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleSystem: {fileID: 6434998597282772591}
-  minState:
-    position: {x: 0, y: 0, z: 0}
-    scale: {x: 0, y: 0, z: 0}
-    alpha: 0
-    emission: 0
-    startSpeed: 0
-    startScale: 0
-  maxState:
-    position: {x: 0, y: 0, z: 0}
-    scale: {x: 0, y: 0, z: 0}
-    alpha: 0
-    emission: 0
-    startSpeed: 0
-    startScale: 0
-  testValue: 0.5
 --- !u!1 &3699701965708662456
 GameObject:
   m_ObjectHideFlags: 0

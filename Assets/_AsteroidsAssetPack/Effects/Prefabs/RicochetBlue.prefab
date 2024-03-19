@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1390338458441946460}
   - component: {fileID: 8251240744273467012}
   m_Layer: 0
-  m_Name: Ricochet_blue (1)
+  m_Name: RicochetParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4908,7 +4908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4771135477981090696}
   m_Layer: 0
-  m_Name: Impact
+  m_Name: RicochetBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
