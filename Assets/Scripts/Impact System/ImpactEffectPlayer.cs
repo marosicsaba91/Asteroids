@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class ImpactEffectPlayer : MonoBehaviour, IImpactHandler
 {
-	[SerializeField] Effect[] impactEffects;
-	[SerializeField] Effect[] deathEffects;
 	[SerializeField] float minimumDamage = 0.5f;
 	[SerializeField] float minimumPush = 0;
 	[SerializeField] bool disableOnDeath = true;
+
+
+	[SerializeField] GameObject[] impactEffectPrefabs;
+	[SerializeField] GameObject[] deathEffectPrefabs;
 
 	EffectManager _effectManager;
 
@@ -19,9 +21,9 @@ public class ImpactEffectPlayer : MonoBehaviour, IImpactHandler
 	{
 		if (minimumDamage > damage) return;
 		if (minimumPush > push) return;
-		if (impactEffects.Length == 0) return;
+		if (impactEffectPrefabs.Length == 0) return;
 
-		Effect effect = impactEffects[Random.Range(0, impactEffects.Length)];
+		GameObject effect = impactEffectPrefabs[Random.Range(0, impactEffectPrefabs.Length)];
 		_effectManager.Play(effect, position, Utility.GetAngle(direction));
 	}
 
@@ -30,9 +32,9 @@ public class ImpactEffectPlayer : MonoBehaviour, IImpactHandler
 		if (disableOnDeath)
 			gameObject.SetActive(false);
 
-		if (deathEffects.Length == 0) return;
+		if (deathEffectPrefabs.Length == 0) return;
 
-		Effect effect = deathEffects[Random.Range(0, deathEffects.Length)];
+		GameObject effect = deathEffectPrefabs[Random.Range(0, deathEffectPrefabs.Length)];
 		if (effect != null)
 			_effectManager.Play(effect, transform.position, 0);
 	}

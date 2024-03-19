@@ -11,10 +11,10 @@ class Projectile : MonoBehaviour, ITeleportHandler, IEndLevelHandler
 	[SerializeField] float destroyDelay = 0.2f;
 	[SerializeField] float acceleration = 15;
 
-	[SerializeField] Effect mazzleEffect;
-	[SerializeField] Effect dieEffect;
-	[SerializeField] Effect hitEffect;
-	 
+	[SerializeField] GameObject mazzleEffectPrefab;
+	[SerializeField] GameObject dieEffectPrefab;
+	[SerializeField] GameObject hitEffectPrefab;
+
 	EffectManager _effectManager; 
 
 	float _lifeTimeLeft;
@@ -41,7 +41,7 @@ class Projectile : MonoBehaviour, ITeleportHandler, IEndLevelHandler
 		_lifeTimeLeft = duration;
 		_speed = startVelocity.magnitude;
 		rigidBody.velocity = startVelocity;
-		_effectManager.Play(mazzleEffect, position, angel);
+		_effectManager.Play(mazzleEffectPrefab, position, angel);
 	}
 	public void OnLevelEnded() => Die();
 	void Update()
@@ -89,7 +89,7 @@ class Projectile : MonoBehaviour, ITeleportHandler, IEndLevelHandler
 			Vector2 collisionPoint = other.ClosestPoint(transform.position);
 			if (target.TryImpact(rigidBody.velocity, collisionPoint, _damage, _push))
 			{
-				_effectManager.Play(hitEffect, collisionPoint, Utility.GetAngle(rigidBody.velocity));
+				_effectManager.Play(hitEffectPrefab, collisionPoint, Utility.GetAngle(rigidBody.velocity));
 				Destroy();
 			}
 		}
@@ -97,7 +97,7 @@ class Projectile : MonoBehaviour, ITeleportHandler, IEndLevelHandler
 	public void Die()
 	{
 		if (_destroyed) return;
-		_effectManager.Play(dieEffect, transform.position, Utility.GetAngle(rigidBody.velocity));
+		_effectManager.Play(dieEffectPrefab, transform.position, Utility.GetAngle(rigidBody.velocity));
 		Destroy();
 	}
 	void Destroy()

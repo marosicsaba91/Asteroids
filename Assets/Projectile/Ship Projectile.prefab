@@ -63,6 +63,12 @@ MonoBehaviour:
     type: 3}
   hitEffect: {fileID: 3489411817756363396, guid: 0042587d9f2befc4eb382139a61e3c7b,
     type: 3}
+  mazzleEffectPrefab: {fileID: 2857023279163853438, guid: a2931b8852681f842bc5f8af45c9df40,
+    type: 3}
+  dieEffectPrefab: {fileID: 7485119826907495141, guid: c419ac05bff1bc74e9938a311280cb05,
+    type: 3}
+  hitEffectPrefab: {fileID: 5677099665267252046, guid: 0042587d9f2befc4eb382139a61e3c7b,
+    type: 3}
 --- !u!114 &-2093336748716922196
 MonoBehaviour:
   m_ObjectHideFlags: 0

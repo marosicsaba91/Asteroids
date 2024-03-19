@@ -155,6 +155,8 @@ MonoBehaviour:
   - {fileID: 7145280520276619754, guid: ab5bffe91b79ecc478c07e062bec7f5b, type: 3}
   spawnEffect: {fileID: 8317489444778768942, guid: 42ea0a4dcaa2a65489c20753d3e4f60e,
     type: 3}
+  spawnEffectPrefab: {fileID: 8320238553207949081, guid: 42ea0a4dcaa2a65489c20753d3e4f60e,
+    type: 3}
 --- !u!50 &996723821
 Rigidbody2D:
   serializedVersion: 4
@@ -429,6 +431,8 @@ MonoBehaviour:
   minimumDamage: 1
   destroyOnDeath: 0
   enableImpact: 1
+  maxHealth: 0
+  currentHealth: 0
 --- !u!114 &7988777571906548370
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -149,9 +149,9 @@ class AsteroidManager : MonoBehaviour, IStartLevelHandler
 			_spawnedAsteroids.Add(newAsteroid.Collider);
 			_asteroidNumber++;
 
-			if (data.spawnEffect && newAsteroid.spawnEffect != null)
+			if (data.spawnEffect && newAsteroid.spawnEffectPrefab != null)
 			{
-				_effectManager.Play(newAsteroid.spawnEffect, data.position, 0);
+				_effectManager.Play(newAsteroid.spawnEffectPrefab, data.position, 0);
 			}
 
 			newAsteroid.transform.position = data.position;

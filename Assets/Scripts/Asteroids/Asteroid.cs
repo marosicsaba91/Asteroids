@@ -19,9 +19,9 @@ public class Asteroid : MonoBehaviour, IImpactHandler
 	AsteroidManager _asteroidManager;
 
 	public float AsteroidWeight => asteroidWeight;
-
-	public Effect spawnEffect; 
 	 
+	public GameObject spawnEffectPrefab;
+
 	public Collider2D Collider => collider2D;
 
 	public void Kill() => impactReceiver.Kill();
