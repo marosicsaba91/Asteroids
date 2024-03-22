@@ -56,18 +56,24 @@ PrefabInstance:
     - target: {fileID: 3845969818330226563, guid: 2e2cecbaa31bb1a489edc50e816acb35,
         type: 3}
       propertyPath: inertia
-      value: 3
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 3845969818330226563, guid: 2e2cecbaa31bb1a489edc50e816acb35,
         type: 3}
       propertyPath: initialMaxHealth
-      value: 200
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3987601120837135049, guid: 2e2cecbaa31bb1a489edc50e816acb35,
         type: 3}
       propertyPath: deathEffects.Array.data[0]
       value: 
       objectReference: {fileID: -745312958978821351, guid: ca78fd3eaa600044098c3ea4816994c7,
+        type: 3}
+    - target: {fileID: 3987601120837135049, guid: 2e2cecbaa31bb1a489edc50e816acb35,
+        type: 3}
+      propertyPath: deathEffectPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3121847219011696124, guid: ca78fd3eaa600044098c3ea4816994c7,
         type: 3}
     - target: {fileID: 4268238993876797896, guid: 2e2cecbaa31bb1a489edc50e816acb35,
         type: 3}
@@ -169,11 +175,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1390327408, guid: b55b75a459452164eaa502163a366d87,
         type: 3}
-    - target: {fileID: 8004056510714792667, guid: 2e2cecbaa31bb1a489edc50e816acb35,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8437324856924212705, guid: 2e2cecbaa31bb1a489edc50e816acb35,
         type: 3}
       propertyPath: magnetRange

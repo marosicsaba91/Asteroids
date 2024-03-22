@@ -45,7 +45,7 @@ public class ImpactReceiver : MonoBehaviour
 	{
 		if (currentHealth <= 0) return;
 		if (rigidBody2D != null)
-			rigidBody2D.AddForceAtPosition((push * rigidBody2D.mass) * direction.normalized, position, ForceMode2D.Impulse);
+			rigidBody2D.AddForceAtPosition((push / inertia) * direction.normalized, position, ForceMode2D.Impulse);
 
 		float lastHealth = currentHealth;
 

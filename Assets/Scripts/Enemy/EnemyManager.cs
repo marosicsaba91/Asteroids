@@ -33,7 +33,7 @@ class EnemyManager : MonoBehaviour, IStartLevelHandler, IEndLevelHandler
 		{
 			SpawnEnemy();
 			CalculateNextSpanTime();
-		}
+		} 
 	}
 
 	void CalculateNextSpanTime()

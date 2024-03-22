@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1973670758879344317}
   - component: {fileID: 1973670758879344316}
   - component: {fileID: 1973670758879344315}
-  - component: {fileID: 2707007667896935616}
   - component: {fileID: 1800422802147049365}
   m_Layer: 0
   m_Name: EnemyHitRickochet
@@ -4900,22 +4899,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &2707007667896935616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973670758879344314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1947b28ab23056748b4c516cc9009c01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleSys: {fileID: 1973670758879344316}
-  audioSources:
-  - {fileID: 1800422802147049365}
-  audioClips: []
 --- !u!82 &1800422802147049365
 AudioSource:
   m_ObjectHideFlags: 0
