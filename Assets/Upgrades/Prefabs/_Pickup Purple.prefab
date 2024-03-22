@@ -46,7 +46,7 @@ PrefabInstance:
     - target: {fileID: 5728068240071887731, guid: 3cb89a2b067f5024881a009ed5c7ac0e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5728068240071887731, guid: 3cb89a2b067f5024881a009ed5c7ac0e,
         type: 3}
@@ -109,6 +109,18 @@ PrefabInstance:
       propertyPath: impactEffects.Array.data[0]
       value: 
       objectReference: {fileID: 1576508933734262047, guid: 4084a5254cf6c49409237abbf28252cc,
+        type: 3}
+    - target: {fileID: 7711710712946054883, guid: 3cb89a2b067f5024881a009ed5c7ac0e,
+        type: 3}
+      propertyPath: deathEffectPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3923701105415982685, guid: b36b1c8738c5a6146b60587cab23582d,
+        type: 3}
+    - target: {fileID: 7711710712946054883, guid: 3cb89a2b067f5024881a009ed5c7ac0e,
+        type: 3}
+      propertyPath: impactEffectPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8319981552294077487, guid: 4084a5254cf6c49409237abbf28252cc,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

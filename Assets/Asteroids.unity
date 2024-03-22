@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 227163153}
   - component: {fileID: 227163152}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Screen Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 235552663}
   - component: {fileID: 235552662}
   m_Layer: 5
-  m_Name: Full Screen Button
+  m_Name: Screen Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1055,7 +1055,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 272555d2375efeb41a565a5b43ce4111, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -2598,7 +2598,7 @@ GameObject:
   - component: {fileID: 626142082}
   - component: {fileID: 626142081}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Audio Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6738,6 +6738,12 @@ MonoBehaviour:
     m_RotationOrder: 4
   healthChangeSpeed: 80
   maxHealthChangeSpeed: 250
+  mutedSprite: {fileID: 21300000, guid: 43e36285819b1d046918d583a045adb9, type: 3}
+  unmutedSprite: {fileID: 21300000, guid: bc9f74d9aed460e4cb934744cee371b8, type: 3}
+  fullScreenSprite: {fileID: 21300000, guid: 62d17c9e2be3b5d48be790abde7e1189, type: 3}
+  windowedSprite: {fileID: 21300000, guid: ef73e64a2cc575c428a6d43f8caadedc, type: 3}
+  musicImage: {fileID: 626142081}
+  screenImage: {fileID: 227163152}
 --- !u!1001 &1533344800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8887,7 +8893,7 @@ GameObject:
   - component: {fileID: 1965265371}
   - component: {fileID: 1965265370}
   m_Layer: 5
-  m_Name: Sound Button
+  m_Name: Audio Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

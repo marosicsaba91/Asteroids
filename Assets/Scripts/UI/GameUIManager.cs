@@ -15,6 +15,15 @@ class GameUIManager : MonoBehaviour, IStartLevelHandler
 	[SerializeField] float healthChangeSpeed = 10f;
 	[SerializeField] float maxHealthChangeSpeed = 500f;
 
+	[SerializeField] Sprite mutedSprite;
+	[SerializeField] Sprite unmutedSprite;
+	[SerializeField] Sprite fullScreenSprite;
+	[SerializeField] Sprite windowedSprite;
+
+	[SerializeField] Image musicImage;
+	[SerializeField] Image screenImage;
+
+
 	GameManager _gameManager;
 	Player _player;
 
@@ -26,6 +35,8 @@ class GameUIManager : MonoBehaviour, IStartLevelHandler
 		fullScreenButton.onClick.AddListener(FullScreen);
 		muteButton.onClick.AddListener(Mute);
 		AudioListener.pause = true;
+
+		UpdateSprites();
 	}
 
 	public void OnStartLevel(int level) => UpdateUI();
@@ -73,6 +84,7 @@ class GameUIManager : MonoBehaviour, IStartLevelHandler
 	void Mute() 
 	{
 		AudioListener.pause = !AudioListener.pause;
+		UpdateSprites();
 	}
 
 	void FullScreen()
@@ -89,5 +101,12 @@ class GameUIManager : MonoBehaviour, IStartLevelHandler
 			Resolution fullScreenResolution = Screen.currentResolution;
 			Screen.SetResolution(fullScreenResolution.width, fullScreenResolution.height, true);
 		}
+		UpdateSprites();
+	}
+
+	void UpdateSprites()
+	{
+		musicImage.sprite = AudioListener.pause ? mutedSprite : unmutedSprite;
+		screenImage.sprite = Screen.fullScreen ? windowedSprite : fullScreenSprite;
 	}
 }

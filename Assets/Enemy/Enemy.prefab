@@ -96,6 +96,8 @@ MonoBehaviour:
   minimumDamage: 1
   destroyOnDeath: 1
   enableImpact: 1
+  maxHealth: 0
+  currentHealth: 0
 --- !u!114 &3987601120837135049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,13 +110,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c7451833e48b24da12c1b879534ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactEffects:
-  - {fileID: 2707007667896935616, guid: 81e07d23e7805514782a70b44aa36236, type: 3}
-  deathEffects:
-  - {fileID: -1984883377854856001, guid: 80f91814a1427724580a6261aa47856b, type: 3}
   minimumDamage: 0.5
   minimumPush: 0
   disableOnDeath: 1
+  impactEffectPrefabs:
+  - {fileID: 1973670758879344314, guid: 81e07d23e7805514782a70b44aa36236, type: 3}
+  deathEffectPrefabs:
+  - {fileID: 3121847219011696124, guid: ca78fd3eaa600044098c3ea4816994c7, type: 3}
 --- !u!114 &8437324856924212705
 MonoBehaviour:
   m_ObjectHideFlags: 0

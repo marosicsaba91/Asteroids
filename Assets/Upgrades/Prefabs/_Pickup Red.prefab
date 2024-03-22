@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3355543792335672167
+--- !u!1001 &8892412725053485256
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12,63 +12,75 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -480415653, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
+      objectReference: {fileID: -181555241, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
         type: 3}
     - target: {fileID: 3002112618142740091, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: m_Name
-      value: _Pickup Blue
+      value: _Pickup Red
       objectReference: {fileID: 0}
     - target: {fileID: 4080544137625438079, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: sprites.Array.data[0]
       value: 
-      objectReference: {fileID: -480415653, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
+      objectReference: {fileID: -181555241, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
         type: 3}
     - target: {fileID: 4080544137625438079, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: sprites.Array.data[1]
       value: 
-      objectReference: {fileID: -1516682012, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
+      objectReference: {fileID: -752955055, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
         type: 3}
     - target: {fileID: 4080544137625438079, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: sprites.Array.data[2]
       value: 
-      objectReference: {fileID: -946169057, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
+      objectReference: {fileID: 1368773717, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
         type: 3}
     - target: {fileID: 4080544137625438079, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: sprites.Array.data[3]
       value: 
-      objectReference: {fileID: -851754523, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
+      objectReference: {fileID: -1110540389, guid: 55009a8bf22d90b44a1f58a01cd3d07b,
         type: 3}
     - target: {fileID: 5013853579297293700, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: deathEffects.Array.data[0]
       value: 
-      objectReference: {fileID: 140096329061892733, guid: 76d6c39ebcf5a284294314f0dd7c974c,
+      objectReference: {fileID: 5693239703410684914, guid: e51d0fc0737486c478c9b83d35e61c73,
         type: 3}
     - target: {fileID: 5013853579297293700, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: impactEffects.Array.data[0]
       value: 
-      objectReference: {fileID: 6822130647417038180, guid: c7b0adb5e5332484c969546cf35f68d9,
+      objectReference: {fileID: 1500067486669696572, guid: 0aa0017abb9819544b382f8dc18d2f94,
+        type: 3}
+    - target: {fileID: 5013853579297293700, guid: 4fb7e6df5c796a9419366e49873b605d,
+        type: 3}
+      propertyPath: deathEffectPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3818324157396038262, guid: e51d0fc0737486c478c9b83d35e61c73,
+        type: 3}
+    - target: {fileID: 5013853579297293700, guid: 4fb7e6df5c796a9419366e49873b605d,
+        type: 3}
+      propertyPath: impactEffectPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8234601913286405900, guid: 0aa0017abb9819544b382f8dc18d2f94,
         type: 3}
     - target: {fileID: 7056972372569610260, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7056972372569610260, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.4246464
+      value: 1.1523799
       objectReference: {fileID: 0}
     - target: {fileID: 7056972372569610260, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4238096
+      value: -3.047455
       objectReference: {fileID: 0}
     - target: {fileID: 7056972372569610260, guid: 4fb7e6df5c796a9419366e49873b605d,
         type: 3}
